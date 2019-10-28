@@ -1,31 +1,42 @@
 {% macro nav(app, activePage = 'home') %}
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
-    <div class="uk-navbar-left">
-        <a href="{{app.url}}" class="uk-navbar-item">
-            <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
-        </a>
-        <a href="{{app.url}}" class="uk-navbar-item uk-logo uk-text-secondary uk-visible@m">
-            {{app.title}}
-        </a>
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav id="navbar" class="uk-navbar-container uk-box-shadow-small" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            {# <a href="{{app.url}}" class="uk-navbar-item">
+                <img src="{{app.logo}}" alt="{{app.title}}" width="32px" uk-img>
+            </a> #}
+            <a href="{{app.url}}" class="uk-navbar-item uk-logo uk-text-bold uk-text-secondary">
+                {{app.title}} <sup><span class="uk-text-small">TM</span></sup>
+            </a>
 
-    </div>
+        </div>
 
-    <div class="uk-navbar-right">
+        <div class="uk-navbar-right">
 
-        <ul class="uk-navbar-nav">
-            <li class="{% if activePage == 'home' %}uk-active{%- endif %}">
-                <a href="#">Home</a>
-            </li>
-            <li class="{% if activePage == 'about' %}uk-active{%- endif %}">
-                <a href="#">About</a>
-            </li>
-            <li class="{% if activePage == 'contact' %}uk-active{%- endif %}">
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+            <ul class="uk-navbar-nav">
+                <li class="uk-active uk-text-bold">
+                    <a href="#">Home</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Schedule Repair</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Authencity</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Policy</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
 
-        
-        
-    </div>
-</nav>
+            
+            
+        </div>
+    </nav>
+</div>
 {%- endmacro %}

@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="A static sitebuilder framework built from gulp, nunjucks, browserify, sass and UIKit">
-    <meta name="keywords" content="tracing paper, jigsaw,design,logo,print,graphic,web design,web development">
+    <meta name="description" content="Your partner in all your Apple product repair needs.">
+    <meta name="keywords" content="icare, iphone, repair, apple">
     <!-- Open Graph -->
-    <meta property="og:title" content="Mosaic">
+    <meta property="og:title" content="iCareCentre">
     <meta name="og:type" content="website">
     <meta name="og:url" content="localhost:4000">
     <meta name="og:image" content="/assets/images/logo.svg">
 
     <!-- Recommended -->
-    <meta property="og:site_name" content="Mosaic">
-    <meta name="twitter:image:alt" content="Mosaic">
+    <meta property="og:site_name" content="iCareCentre">
+    <meta name="twitter:image:alt" content="iCareCentre">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <!-- Robots -->
     <meta name="robots" content="index, follow">
 
-    <title>Mosaic</title>
+    <title>iCareCentre</title>
 
     <!-- FontAwesom -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
@@ -37,83 +37,128 @@
 
     
 
-    <div class="uk-flex uk-flex-column vh-100">
+    <div class="uk-flex uk-flex-column">
 
         
         
-<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
-    <div class="uk-navbar-left">
-        <a href="localhost:4000" class="uk-navbar-item">
-            <img src="/assets/images/logo.svg" alt="Mosaic" width="32px" uk-img>
-        </a>
-        <a href="localhost:4000" class="uk-navbar-item uk-logo uk-text-secondary uk-visible@m">
-            Mosaic
-        </a>
-
-    </div>
-
-    <div class="uk-navbar-right">
-
-        <ul class="uk-navbar-nav">
-            <li class="uk-active">
-                <a href="#">Home</a>
-            </li>
-            <li class="">
-                <a href="#">About</a>
-            </li>
-            <li class="">
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-
-        
-        
-    </div>
-</nav>
-
-        <div class="uk-container uk-margin-auto-vertical uk-text-center">
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav id="navbar" class="uk-navbar-container uk-box-shadow-small" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
             
-            <div class="uk-heading-hero">Welcome!</div>
-            <div class="uk-margin-medium-top">
-                <div class="uk-text-lead uk-text-muted">This is a starter page setup for your Jigsaw project. Start editing <span class="uk-text-primary">index.njk</span> to get started.</div>
-            </div>
-            
-            <div class="uk-margin-large-top">
-                <a href="https://github.com/tracingpaper/mosaic" class="uk-button uk-button-primary uk-button-large"><i uk-icon="icon: github" class="uk-margin-right"></i> View in Github</a>
-            </div>
+            <a href="localhost:4000" class="uk-navbar-item uk-logo uk-text-bold uk-text-secondary">
+                iCareCentre <sup><span class="uk-text-small">TM</span></sup>
+            </a>
 
         </div>
 
-        <div class="uk-section uk-section-muted">
-            <div class="uk-container">
-                <div uk-grid>
+        <div class="uk-navbar-right">
 
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://mozilla.github.io/nunjucks/getting-started.html" class="uk-link-muted uk-padding-small">
-                            <i class="fa fa-book"></i>  Read Nunjucks Docs
-                        </a>
+            <ul class="uk-navbar-nav">
+                <li class="uk-active uk-text-bold">
+                    <a href="#">Home</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Schedule Repair</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Authencity</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Policy</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="uk-text-bold">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            
+            
+        </div>
+    </nav>
+</div>
+
+        <div class="uk-flex uk-flex-column" uk-height-viewport="offset-top: true">
+
+            <div class="uk-section uk-section-light uk-margin-auto-vertical">
+                <div class="uk-container">
+
+                    <div class="uk-grid-medium" uk-grid>
+
+                        <div class="uk-width-1-2@m uk-width-1-1@s uk-text-center uk-text-left@m">
+
+                            <h1 class="uk-heading-small">
+                                <span class="uk-text-bold">Your Partner In</span>
+                                <span class="uk-text-light">All your Apple Products</span>
+                                <span>Repair Needs</span>
+                            </h1>
+
+                            <h4 class="uk-text-bold uk-margin-small-top uk-text-gray">iPhone | Macbooks | iPad | iMac | i Watch</h4>
+
+                            <button class="uk-button uk-button-large uk-button-secondary uk-border-rounded uk-margin-small-top">
+                                <span class="uk-text-large">Repair Your Product</span>
+                            </button>
+                        </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://sass-lang.com/guide" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-sass"></i>  Read Sass Docs
-                        </a>
+            <div class="uk-margin-auto-top uk-section uk-section-muted uk-padding-small">
+                <div class="container uk-text-center">
+
+                    <div class="uk-text-large uk-text-uppercase">
+                        Pick Up & Drop   |   Repair Warranty   |   Quality Repairing   |   Fast Turnaround Time
                     </div>
-
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://getuikit.com/docs/" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-uikit"></i>  Read UIKit Docs
-                        </a>
-                    </div>
-
                 </div>
             </div>
         </div>
 
-        <div class="footer uk-section uk-padding-small uk-text-small">
+        <div class="uk-section uk-padding-medium uk-section-secondary section-gradient">
+            <div class="uk-container uk-text-center">
+                <h1 class="uk-text-uppercase">
+                    <span class="uk-text-bold">Schedule A</span>
+                    <span class="uk-text-light">Repair</span>
+                </h1>
+
+                <h3 class="uk-margin-small-top">Its Quicker Than You Think</h3>
+
+                <div class="uk-placeholder uk-padding uk-text-center">
+                    Placeholder
+                </div>
+
+                <div class="uk-text-large uk-margin-top">
+                    <span class="uk-text-bold uk-text-uppercase">Step 1:</span>
+                    <span class="uk-text-light uk-margin-small-left">Start by selecting the device</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-section-default uk-padding-medium">
+
+            <div class="uk-container uk-text-center">
+                <h1 class="uk-text-uppercase">
+                    <span class="uk-text-bold">What people have to say about</span>
+                    <span class="uk-text-light">iCare</span>
+                </h1>
+
+                <div class="uk-placeholder uk-padding-large uk-text-center">
+
+                    <span class="uk-text-large">Video</span>
+                </div>
+
+                <p class="uk-margin-top">
+                    Experienced and professional technicians. We have a team of industry experts. Senior technicians with more than 10 years of experience. We have experts for softwares, part replacement, motherboard level repair etc. We do it all.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer uk-section uk-section-secondary uk-padding-small uk-text-small">
     <div uk-grid>
         <div class="uk-text-center uk-text-left@m uk-width-1-1 uk-width-1-3@m">
-            Copyright 2018 &copy; Tracing Paper. All rights reserved
+            Copyright 2018 &copy; iCareCentre. All rights reserved
         </div>
         <div class="uk-text-center uk-width-1-1 uk-width-1-3@m">
             Hand Crafted with <span class="uk-text-danger"><i class="fa fa-heart"></i></span> by <a class="uk-link-muted" href="https://www.instagram.com/tracingpaperofficial">Tracing Paper</a>

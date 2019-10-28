@@ -2,48 +2,84 @@
 
 {% block content %}
 
-    <div class="uk-flex uk-flex-column vh-100">
+    <div class="uk-flex uk-flex-column">
 
         {% import "macros/navbar.macro.njk" as navbar %}
         {{ navbar.nav(app, 'home') }}
 
-        <div class="uk-container uk-margin-auto-vertical uk-text-center">
-            
-            <div class="uk-heading-hero">Welcome!</div>
-            <div class="uk-margin-medium-top">
-                <div class="uk-text-lead uk-text-muted">This is a starter page setup for your Jigsaw project. Start editing <span class="uk-text-primary">index.njk</span> to get started.</div>
-            </div>
-            
-            <div class="uk-margin-large-top">
-                <a href="https://github.com/tracingpaper/mosaic" class="uk-button uk-button-primary uk-button-large"><i uk-icon="icon: github" class="uk-margin-right"></i> View in Github</a>
-            </div>
+        <div class="uk-flex uk-flex-column" uk-height-viewport="offset-top: true">
 
-        </div>
+            <div class="uk-section uk-section-light uk-margin-auto-vertical">
+                <div class="uk-container">
 
-        <div class="uk-section uk-section-muted">
-            <div class="uk-container">
-                <div uk-grid>
+                    <div class="uk-grid-medium" uk-grid>
 
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://mozilla.github.io/nunjucks/getting-started.html" class="uk-link-muted uk-padding-small">
-                            <i class="fa fa-book"></i>  Read Nunjucks Docs
-                        </a>
+                        <div class="uk-width-1-2@m uk-width-1-1@s uk-text-center uk-text-left@m">
+
+                            <h1 class="uk-heading-small">
+                                <span class="uk-text-bold">Your Partner In</span>
+                                <span class="uk-text-light">All your Apple Products</span>
+                                <span>Repair Needs</span>
+                            </h1>
+
+                            <h4 class="uk-text-bold uk-margin-small-top uk-text-gray">iPhone | Macbooks | iPad | iMac | i Watch</h4>
+
+                            <button class="uk-button uk-button-large uk-button-secondary uk-border-rounded uk-margin-small-top">
+                                <span class="uk-text-large">Repair Your Product</span>
+                            </button>
+                        </div>
                     </div>
-
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://sass-lang.com/guide" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-sass"></i>  Read Sass Docs
-                        </a>
-                    </div>
-
-                    <div class="uk-width-1-1 uk-width-1-3@m uk-text-center">
-                        <a href="https://getuikit.com/docs/" class="uk-link-muted uk-padding-small">
-                            <i class="fab fa-uikit"></i>  Read UIKit Docs
-                        </a>
-                    </div>
-
                 </div>
             </div>
+
+            <div class="uk-margin-auto-top uk-section uk-section-muted uk-padding-small">
+                <div class="container uk-text-center">
+
+                    <div class="uk-text-large uk-text-uppercase">
+                        Pick Up & Drop   |   Repair Warranty   |   Quality Repairing   |   Fast Turnaround Time
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-padding-medium uk-section-secondary section-gradient">
+            <div class="uk-container uk-text-center">
+                <h1 class="uk-text-uppercase">
+                    <span class="uk-text-bold">Schedule A</span>
+                    <span class="uk-text-light">Repair</span>
+                </h1>
+
+                <h3 class="uk-margin-small-top">Its Quicker Than You Think</h3>
+
+                <div class="uk-placeholder uk-padding uk-text-center">
+                    Placeholder
+                </div>
+
+                <div class="uk-text-large uk-margin-top">
+                    <span class="uk-text-bold uk-text-uppercase">Step 1:</span>
+                    <span class="uk-text-light uk-margin-small-left">Start by selecting the device</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-section-default uk-padding-medium">
+
+            <div class="uk-container uk-text-center">
+                <h1 class="uk-text-uppercase">
+                    <span class="uk-text-bold">What people have to say about</span>
+                    <span class="uk-text-light">iCare</span>
+                </h1>
+
+                <div class="uk-placeholder uk-padding-large uk-text-center">
+
+                    <span class="uk-text-large">Video</span>
+                </div>
+
+                <p class="uk-margin-top">
+                    Experienced and professional technicians. We have a team of industry experts. Senior technicians with more than 10 years of experience. We have experts for softwares, part replacement, motherboard level repair etc. We do it all.
+                </p>
+            </div>
+
         </div>
 
         {% include "partials/footer.partial.njk" %}

@@ -9,17 +9,17 @@
 */
 
 // COLORS //
-$primary:   #34D18E;
-$secondary: #0B172A;
+$primary:   #22A5F9;
+$secondary: #03202D;
 
 $success:   #8bc34a;
 $warning:   #ffc107;
-$danger :   #f44336;
-$muted  :   #f8f8f8;
+$danger :   #DC0C39;
+$muted  :   #E2E2E2;
 
-$dark   :   #2e2e2e;
-$gray   :   #666;
-$light  :   #f4f4f4;
+$dark   :   #03202D;
+$gray   :   #626262;
+$light  :   #FFFFFF;
 
 // OVERRIDES //
 $global-primary-background: $primary;
@@ -37,8 +37,8 @@ $global-color: $gray;
 $global-emphasis-color: $dark;
 $global-inverse-color: $light;
 
-$global-font-family: 'Poppins', 'Roboto', sans-serif;
-$global-font-size: 15px;
+$global-font-family: 'Montserrat', 'Roboto', sans-serif;
+$global-font-size: 12.5px;
 // => Add your own theming variables below //
 
 // (x) Donot write custom styling here //

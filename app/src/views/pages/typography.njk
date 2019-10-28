@@ -1,0 +1,31 @@
+{% extends "layouts/app.layout.njk" %}
+
+{% block content %}
+
+    <div class="uk-container">
+
+        <h1 class="uk-text-primary uk-heading-divider">Headings</h1>
+
+        {% for i in range(1, 7) %}
+
+            <h{{i}}>Heading {{i}}</h{{i}}>
+
+        {% endfor %}
+
+        <h1 class="uk-text-primary uk-heading-divider">UIKit headings</h1>
+
+        <h1 class="uk-heading-small">Small</h1>
+        <h1 class="uk-heading-medium">Medium</h1>
+        <h1 class="uk-heading-large">Large</h1>
+        <h1 class="uk-heading-xlarge">X-Large</h1>
+        <h1 class="uk-heading-2xlarge">2X-Large</h1>
+
+        <h1 class="uk-text-primary uk-heading-divider">Text Style</h1>
+
+        <p class="uk-text-lead">Text Lead</p>
+        <p class="uk-text-large">Text Large</p>
+        <p class="uk-text-small">Text Small</p>
+        <p class="uk-text-meta">Text Meta</p>
+    </div>
+
+{% endblock %}
