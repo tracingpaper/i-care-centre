@@ -55,3 +55,7 @@ html, body {
 .section-gradient {
     background: linear-gradient(29.04deg, $danger 0%, $primary 100%);
 }
+
+.uk-text-dark {
+    color: $dark !important;
+}

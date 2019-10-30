@@ -3,5 +3,31 @@
         "facebook": "tracingpaperofficial",
         "instagram": "tracingpaperofficial",
         "twitter": "tracingpaperz"
-    }
+    },
+    "devices": [
+        {
+            "title": "iPhone",
+            "image": "iphone.svg"
+        },
+        {
+            "title": "iPad",
+            "image": "ipad.svg"
+        },
+        {
+            "title": "Macbook",
+            "image": "macbook.svg"
+        },
+        {
+            "title": "iMac",
+            "image": "mac.svg"
+        },
+        {
+            "title": "iPod",
+            "image": "ipod.svg"
+        },
+        {
+            "title": "iMac",
+            "image": "watch.svg"
+        }
+    ]
 }
