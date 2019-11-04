@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54 (76480) - https://sketchapp.com -->
+    <title>45555D71-6767-4329-BB67-ECB4D9C96572</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icare" transform="translate(-1040.000000, -2576.000000)" fill-rule="nonzero">
+            <g id="box" transform="translate(1040.000000, 2576.000000)">
+                <polygon id="Path" fill="#1E60A3" points="48 0 10 0 0 16 0 58 58 58 58 16"></polygon>
+                <polygon id="Path" fill="#408DDA" points="10 0 0 16 58 16 48 0"></polygon>
+                <polygon id="Path" fill="#CECECE" points="33 54 29 50 25 54 23 52 23 58 35 58 35 52"></polygon>
+                <rect id="Rectangle" fill="#DB165E" x="20" y="30" width="18" height="16"></rect>
+                <g id="Group" transform="translate(23.000000, 33.000000)" fill="#ECECEC">
+                    <path d="M7,8 L1,8 C0.448,8 0,8.447 0,9 C0,9.553 0.448,10 1,10 L7,10 C7.552,10 8,9.553 8,9 C8,8.447 7.552,8 7,8 Z" id="Path"></path>
+                    <path d="M11,8 L10,8 C9.448,8 9,8.447 9,9 C9,9.553 9.448,10 10,10 L11,10 C11.552,10 12,9.553 12,9 C12,8.447 11.552,8 11,8 Z" id="Path"></path>
+                    <path d="M5,2 L11,2 C11.552,2 12,1.553 12,1 C12,0.447 11.552,0 11,0 L5,0 C4.448,0 4,0.447 4,1 C4,1.553 4.448,2 5,2 Z" id="Path"></path>
+                    <path d="M11,4 L9,4 C8.448,4 8,4.447 8,5 C8,5.553 8.448,6 9,6 L11,6 C11.552,6 12,5.553 12,5 C12,4.447 11.552,4 11,4 Z" id="Path"></path>
+                    <path d="M1,6 L3,6 C3.552,6 4,5.553 4,5 C4,4.447 3.552,4 3,4 L1,4 C0.448,4 0,4.447 0,5 C0,5.553 0.448,6 1,6 Z" id="Path"></path>
+                    <path d="M1,2 L2,2 C2.552,2 3,1.553 3,1 C3,0.447 2.552,0 2,0 L1,0 C0.448,0 0,0.447 0,1 C0,1.553 0.448,2 1,2 Z" id="Path"></path>
+                    <path d="M5.29,4.29 C5.11,4.479 5,4.729 5,5 C5,5.27 5.11,5.52 5.29,5.71 C5.48,5.89 5.74,6 6,6 C6.26,6 6.52,5.89 6.71,5.71 C6.89,5.52 7,5.26 7,5 C7,4.74 6.89,4.479 6.71,4.29 C6.33,3.92 5.66,3.92 5.29,4.29 Z" id="Path"></path>
+                </g>
+                <rect id="Rectangle" fill="#ECECEC" x="23" y="0" width="12" height="16"></rect>
+                <polygon id="Path" fill="#CECECE" points="25 21 29 25 33 21 35 23 35 16 23 16 23 23"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,6 +5,8 @@
     <div class="uk-flex uk-flex-column">
 
         {% import "macros/navbar.macro.njk" as navbar %}
+        {% import "macros/rating.macro.njk" as rating %}
+
         {{ navbar.nav(app, 'home') }}
 
         <div class="uk-flex uk-flex-column" uk-height-viewport="offset-top: true">
@@ -22,7 +24,7 @@
                                 <span>Repair Needs</span>
                             </h1>
 
-                            <div class="uk-margin-top uk-margin-bottom uk-text-center uk-text-center@m">
+                            <div class="uk-margin-top uk-margin-bottom uk-text-center uk-text-left@m">
                                 <img style="max-width: 206px; width: 100%;" src="assets/images/apple_authorized.png" alt="Authorized Reseller, Authorized Service Provider">
                             </div>
 
@@ -82,7 +84,7 @@
         <div class="uk-section uk-section-default uk-padding-medium">
 
             <div class="uk-container uk-text-center">
-                <h1 class="uk-text-uppercase">
+                <h1 class="uk-text-uppercase uk-margin-large-bottom">
                     <span class="uk-text-bold">What people have to say about</span>
                     <span class="uk-text-light">iCare</span>
                 </h1>
@@ -97,6 +99,108 @@
                 </p>
             </div>
 
+        </div>
+
+        <div class="uk-section uk-section-muted uk-padding">
+            <div class="uk-container uk-text-center">
+                <div class="uk-grid-small uk-flex-stretch" uk-grid>
+
+                    {% for testimonial in data.testimonials %}
+                    <div class="uk-width-1-2 uk-width-1-4@m">
+                        <div class="uk-tile uk-height-1-1 uk-tile-default uk-border-rounded uk-shadow-small uk-padding">
+                            
+                            <div class="uk-margin-vertical">
+                                {{rating.star(5, testimonial.rating)}}
+                            </div>
+
+                            <h3 class="uk-text-bold">{{testimonial.name}}</h3>
+
+                            <p class="uk-text-light">{{testimonial.content}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-section-default uk-padding" style="position: relative;">
+
+            <div class="uk-container-fluid">
+                <h1 class="uk-text-uppercase uk-text-center uk-margin-large-top">
+                    <span class="uk-text-bold">How It</span>
+                    <span class="uk-text-light">Works</span>
+                </h1>
+
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+
+                    <div class="uk-width-1-1 uk-width-2-5@m uk-padding-remove">
+                        <img src="assets/images/imac.png" class="img-stick-left" alt="How It Works">
+                    </div>
+
+                    <div class="uk-width-1-1 uk-width-3-5@m">
+                        <div class="uk-margin-left">
+
+                            <div class="uk-grid-medium" uk-grid>
+
+                                {% for step in data.steps %}
+                                    <div class="uk-width-1-2">
+                                        <div class="image">
+                                            <img style="height:50px;" src="assets/images/how_it_works/{{step.icon}}" alt="{{step.title}}">
+                                        </div>
+                                        <h4 class="uk-text-bold uk-text-uppercase uk-margin-remove-bottom uk-margin-small-top">Step {{loop.index}}</h4>
+                                        <h3 class="uk-text-bold uk-text-uppercase uk-margin-remove-top">{{step.title}}</h3>
+
+                                        <p>{{step.content}}</p>
+                                    </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="uk-section uk-section-muted uk-padding">
+            <div class="uk-container">
+                <h1 class="uk-text-uppercase uk-margin-large-bottom uk-text-bold">FAQ's</h1>
+            </div>
+        </div>
+
+        <div class="uk-section uk-section-default uk-padding">
+
+            <div class="uk-container">
+                <h1 class="uk-text-uppercase uk-text-center">
+                    <span class="uk-text-bold">About</span>
+                    <span class="uk-text-light">Us</span>
+                </h1>
+
+                <div class="uk-grid-large uk-flex-middle" uk-grid>
+
+                    <div class="uk-width-1-1 uk-width-1-3@m">
+                        <img style="width:100%" src="assets/images/touchbar.png" alt="About Us">
+                    </div>
+
+                    <div class="uk-width-1-1 uk-width-2-3@m">
+                        <p class="uk-h4 uk-text-justify">We are leading mobile repairing center with tendering India’s best iPhone, iPad, iMac, Macbook Repair services. The company assists top notch quality service, which is immensely way ahead & better than local cellphone repair shops. It does not matter, what sort of fault has stricken iPhone, Macbook or iPad, it can get repaired easily by experts technicians. From repairing minor faults like signal issues to repairing serious issues like motherboard repair, we can fix them all in no time. We serve as premium iPhone/iPad repairing service center by tendering Apple standard repairing. We assist special repairing service for iPad repair and services.</p>
+
+                        <div class="uk-margin-top uk-text-large uk-text-bold">
+                            Free Pickup & Drop
+                        </div>
+                        <div class="uk-margin-small-top uk-text-large uk-text-bold">
+                            Months Repair Warranty
+                        </div>
+                        <div class="uk-margin-small-top uk-text-large uk-text-bold">
+                            Quality Repair
+                        </div>
+                        <div class="uk-margin-small-top uk-text-large uk-text-bold">
+                            Fast Turnaround Time
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         {% include "partials/footer.partial.njk" %}

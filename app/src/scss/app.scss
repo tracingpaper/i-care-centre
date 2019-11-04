@@ -59,3 +59,16 @@ html, body {
 .uk-text-dark {
     color: $dark !important;
 }
+
+.el-rating {
+
+    font-size: 1.25rem;
+
+    .active {
+        color: #E8CE0F;
+    }
+}
+
+.img-stick-left {
+    width: 75%;
+}

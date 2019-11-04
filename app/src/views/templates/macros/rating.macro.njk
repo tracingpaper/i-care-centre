@@ -1,0 +1,20 @@
+{% macro star(total, filled) %}
+
+    <div class="uk-flex uk-flex-middle uk-flex-around el-rating">
+        
+        {% for i in range(total) %}
+            
+            {% if i < filled %}
+            <div class="el-rating-star active">
+                <i class="fas fa-star"></i>
+            </div>
+            {% else %}
+            <div class="el-rating-star">
+                <i class="far fa-star"></i>
+            </div>
+            {% endif %}
+
+        {% endfor %}
+    </div>
+
+{% endmacro %}

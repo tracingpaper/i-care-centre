@@ -29,5 +29,49 @@
             "title": "iMac",
             "image": "watch.svg"
         }
+    ],
+    "testimonials": [
+        {
+            "name": "Nandakumar R",
+            "rating": 4,
+            "content": "Professional way of approach to the customer. For diagnosing what is the problem with our system itself we need to pay money. After diagnosing ..."
+        },
+        {
+            "name": "Karthik R",
+            "rating": 4,
+            "content": "Well, Igot my iPhone 6s repaired here. Staff are good and responsive. Services can be given quick with good work management."
+        },
+        {
+            "name": "Sudeep Rastaogi",
+            "rating": 4,
+            "content": "Good service and staffs. Watch out: they will send your device to warehouse junk if not picked back in. Ofcourse they will inform you by mail but only after ..."
+        },
+        {
+            "name": "Dhanraj Khoody",
+            "rating": 4,
+            "content": "Hey folks it's dhanraj here and I would want to thank to I care hsr store , yeah this service centre very good comparing to any other centres in Bangalore , ..."
+        }
+    ],
+    "steps": [
+        {
+            "icon": "pickup-truck.svg",
+            "title": "Schedule Pickup",
+            "content": "Now book a quality repair service from the convenience of your home. No travelling time, no waiting in queues."
+        },
+        {
+            "icon": "fingerprint-scan.svg",
+            "title": "Diagnosis & Estimation",
+            "content": "Get the correct diagnosis and price quotation through our technology enabled platform over email and sms"
+        },
+        {
+            "icon": "repair-services.svg",
+            "title": "Repair upon Approval",
+            "content": "We do not perform any repair without your consent. Once you are satisfied with the quote you just say the word and it’s done."
+        },
+        {
+            "icon": "box.svg",
+            "title": "Product Delivery",
+            "content": "We deliver the device back to your doorstep at your convenient time and date. Simple and Easy!"
+        }
     ]
 }
